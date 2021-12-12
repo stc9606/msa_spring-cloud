@@ -1,0 +1,35 @@
+server:
+  port: 0 #랜덤 포트를 사용하겠다. (포트 충돌 인식 안 해도되는 장점)
+
+spring:
+  application:
+    name: order-service
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2-console
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+#    username: sa
+#    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+#    generate-ddl: true # Spring Boot 2.5 이상버전부터 data.sql 사용법 변경으로 해당 설정 추가
+#    defer-datasource-initialization: true
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} #컬리브레이스
+  client:
+    register-with-eureka: true
+    fetch-registry: true #EUREKA 서버로부터 인스턴스들의 정보를 주기적으로 가져올 것인지를 설정하는 속성. true 면 가져오기
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+logging:
+  level:
+    com.example.orderservice: DEBUG
