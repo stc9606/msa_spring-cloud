@@ -7,12 +7,12 @@ Configuration + Service discovery + Api gateway
 4. zuul-service - Spring Cloud Netflix Zuul
 
 E-commerce Project
-5.catalog-service
-6.order-service
-7.user-service
+5. catalog-service
+6. order-service
+7. user-service
 
 Docker files
-8.docker-files
+8. docker-files
 
 Sample codes
 9. first-service - example for apigateway service
