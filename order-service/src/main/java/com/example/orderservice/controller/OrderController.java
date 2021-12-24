@@ -4,6 +4,7 @@ import com.example.orderservice.dto.OrderDto;
 import com.example.orderservice.jpa.OrderEntity;
 import com.example.orderservice.messagequeue.KafkaProducer;
 import com.example.orderservice.service.OrderService;
+import com.example.orderservice.service.OrderServiceImpl;
 import com.example.orderservice.vo.RequestOrder;
 import com.example.orderservice.vo.ResponseOrder;
 import org.modelmapper.ModelMapper;
@@ -44,6 +45,7 @@ public class OrderController {
 
         OrderDto requestOrderDto = mapper.map(requestOrder, OrderDto.class);
         requestOrderDto.setUserId(userId);
+
         OrderDto responseUserDto = orderService.createOrder(requestOrderDto);
 
         ResponseOrder responseOrder = mapper.map(responseUserDto, ResponseOrder.class);

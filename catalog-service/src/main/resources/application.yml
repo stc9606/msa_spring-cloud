@@ -21,6 +21,9 @@ spring:
     show-sql: true
     generate-ddl: true # Spring Boot 2.5 이상버전부터 data.sql 사용법 변경으로 해당 설정 추가
     defer-datasource-initialization: true
+  kafka:
+    consumer:
+      group-id: consumerGroupId
 
 eureka:
   instance:
