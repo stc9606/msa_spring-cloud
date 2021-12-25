@@ -23,7 +23,7 @@ public class KafkaConsumer {
         this.repository = repository;
     }
 
-    @KafkaListener(topics = "example-catalog-topic")
+    @KafkaListener(topics = "example-catalog-topic", containerFactory = "concurrentKafkaListenerContainerFactory")
     public void updateQty(String kafkaMessage) {
         log.info("Kafka Message: " + kafkaMessage);
 
