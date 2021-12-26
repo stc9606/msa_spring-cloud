@@ -6,10 +6,10 @@ spring:
     password: "{cipher}AQAs1JETgLebbVLrJ4/rS4wqFv0R+12Q71E9thIfxw+CWpq3kFFHB9/TvQ1yIvmLjuqCOwvF3bpA5FSEKoRAA/7ch7ZEUTSygiduoTmU1BDDoLgJOO96OzD3A0GjQltigyjOogU/Vgt7kBo0ZWDNNiu8KP/UsOfdqwTnM4aejxJkAXJ2rvSYIi+bAxR1Qu+LeNpqLWJS2fRWvUczNSNn7Es0pwcmST25IEHjT9lzoQvNZczvL+aurSqU0YQYz/KewbJXnRdwKf7VcZRGPY1Vtm6Jw6/k3p0ybNVjVcuZ6RAL0L2X+UUnfWdSeDziVqal8cJ49MUB0afVDxqxrQpd7oSBk/nzndxmmeKjLbUCJuVl6oGL/V6ape/9Sq7RB9cmLlA="
 token:
   expiration_time: 86400000 # 하루 기간
-  secret: "{cipher}AQBR0Tf7yJ/9rh6Nt6r0NaAVmiefa/yBv1gjM2Ly9C+nSjZEsuMgQYgZry0eo90+KOCviW/xSzO3n5VZm+w3osXCxO7XhA5eAxlimymROKJjFSUBugz19qcI8ryKpfjnpIQ7bIpyk81I7Y1VTAQzaiaO0qsJqQ1ZMTh7jRZQNeyIPetlkwNXoGfaEbxyVR0xoiuRTM3Z4w6+kWJ0dXMBTYwJBIvXt3JvU6pBR107yvCejA+f//D4B47WunYGHRC66HdAjeGHluZnj8GhdTBHLmO4TTppCv8cCiOIE/v9077t1Kd9XnrHHHCbLvnAMMCFKwJ0RpSrs5netlPXLnnuxPxZ+co0WQMLMrrDKytOOTAwFJMwEE6oclXV27ZQj7otSvk="
+  secret: "{cipher}AQBlm3UuwtzXT7a598VvZHCGYT6KBqamDv7ctgQh7PaFTabia+tgvWdQnfB7iNWRxQdBy4r3ilicbp5T7AY5hDNm+IzFb/fejE95MMvXhCqFhDZMEuBeGZV/ipLUIMQCbFSqdM2UTCATvnZeoGxVrAtzsZR1z5ZEH2hX+ncy/oThaPedzd9sqlLpYPAfCwEUFYfPz3d0/nfdU+4c4poBnARTRUUuVjjr/v/cfy5ngcrvUjPKeLAyFqECc6ZMV/ztz+URhIKySrUMJ+vNhug4/a6iRQg+igELZV3DnYUaF9WY5iuYD/Oeduy2WZ8NcjlxbaB+4MnczNG8Ief0jnFUeFwr0eM7xDbZO8cmFi9fUFToOxqoYKnjwocVXaH0gUHbQBCWUAM/lXSfy4KEK+6n7KrP"
 
 gateway:
-  ip: 192.168.219.100
+  ip: 192.168.219.103
 
 order_service:
   url: http://ORDER-SERVICE/order-service/%s/orders
