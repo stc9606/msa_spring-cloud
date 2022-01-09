@@ -1,0 +1,17 @@
+{
+	"ulid": "01FR959DFBKWBV644SHF2PQYAD",
+	"minTime": 1640874898409,
+	"maxTime": 1640880000000,
+	"stats": {
+		"numSamples": 121370,
+		"numSeries": 680,
+		"numChunks": 1239
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FR959DFBKWBV644SHF2PQYAD"
+		]
+	},
+	"version": 1
+}
