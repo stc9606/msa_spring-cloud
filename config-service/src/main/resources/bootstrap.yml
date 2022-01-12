@@ -1,6 +1,7 @@
 encrypt:
 #  key: abcdefvfefsdfesdfz12342sdgjeijfndcwda5678
   key-store:
-    location: file://${user.home}/project/study/back/microservice/keystore/apiEncryptionKey.jks
+    #location: file://${user.home}/project/study/back/microservice/keystore/apiEncryptionKey.jks
+    location: file:/apiEncryptionKey.jks
     password: test1234
     alias: apiEncryptionKey
